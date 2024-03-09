@@ -1,0 +1,150 @@
+ #app {
+    height: 100%;
+  }
+  .indexSwiper{
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide {
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .menu-title-bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(2px);
+        padding: 24px 48px;
+        line-height: 120%;
+        overflow: hidden;
+        z-index: 4000;
+        &:hover {
+          background: rgba(3, 0, 0, 0.5);
+          backdrop-filter: blur(2px);
+        }
+        @media(max-width:1200px) {
+          padding: 12px 24px;
+        }
+      }
+      .menu-title-bg-brunch {
+        text-decoration-line: none;
+        top: 75%;
+        left: 25%;
+        @media(max-width:992px) {
+          top: 15%;
+          left:50%;
+        }
+      }
+      .menu-title-bg-news {
+        text-decoration-line: none;
+        top: 25%;
+        right: 5%;
+        @media(max-width:992px) {
+          top: 60%;
+          left: 50%;
+          right: auto;
+        }
+      }
+      .menu-border {
+        border: 2px solid white;
+        position: absolute;
+        width: 97%;
+        height: 90%;
+        z-index: 4000;
+        top: 2.5%;
+        bottom: 2.5%;
+        left: 2%;
+        right: 2%;
+      }
+
+      .swiper-pagination {
+        position: static;
+        margin: 0 auto;
+      }
+      .swiper-pagination.swiper-pagination-bullet {
+        width: 36px;
+        height: 8px;
+        border-radius: 100px;
+      }
+      .swiper-pagination.swiper-pagination-bullet-active {
+        width: 56px;
+        border-radius: 100px;
+        background-color: #e28763;
+      }
+      .swiper-horizontal{
+        .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+          width: 56px;
+          border-radius: 100px;
+          background-color: #e28763;
+        }
+      }
+      .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+          content: '';
+      }
+  }
+
+  .mealDetailSwiper {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom:30px ;
+      }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-menu {
+          height: 350px;
+          width: 90%;
+        }
+        .card-img {
+          height: 75%;
+        }
+      }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-horizontal{
+        .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+          width: 30px;
+          border-radius: 100px;
+          background-color: #461B09;
+        }
+      }
+      .menu-img {
+        height: 350px;
+      }
+  }
+ body,html {
+    position: relative;
+    height: 100%;
+  }
+  
+   body {
+    margin: 0;
+    padding: 0;
+  }
+ 
+ 
+  
